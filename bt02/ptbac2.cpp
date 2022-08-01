@@ -1,32 +1,42 @@
 #include <stdio.h>
-#include <math.h>
+#include <math.h> //thư viện toán hoc
 	int main(){
-		float a,b,c,delta,x,x1,x2;
+		int a,b,c;
 
 		printf("Nhap a =");
-		scanf("%f",&a);
+		scanf("%d",&a);
 
 		printf("Nhap b =");
-		scanf("%f",&b);
+		scanf("%d",&b);
 
 		printf("Nhap c =");
-		scanf("%f",&c);
+		scanf("%d",&c);
 
 		if(a==0){
-			x=-c/b;
-			printf("Phuong trinh co mot nghiem duy nhat = %.2f",x);
+			if(b==0){
+				if(c==0){
+					printf("Phuong trinh vo so nghiem;");
+				}
+				else{
+					printf("Phương trinh vo nghiem");
+				}
+			}
+			else{
+				float x=-(float)c/b; //ép kiểu dữ 
+				printf("Phuong trinh co mot nghiem duy nhat = %f",x);
+			}
 		}
 		else{
-			delta=(b*b)-(4*a*c);
+			float delta=(b*b)-(4*a*c);
 			if(delta==0){
-				x1=x2=-b/2*a;
-				printf("Phuong trinh co mot nghiem kep %.2f",x1);
+				float x1=-(float)b/2*a;
+				printf("Phuong trinh co mot nghiem kep %f",x1);
 			}
 			else{
 				if(delta>0){
-					x1=(-b+sqrt(delta))/(2*a);
-					x2=(-b-sqrt(delta))/(2*a);
-					printf("Phuong trinh co hai nghiem phan biet = %.2f %.2f",x1,x2);
+					float x1=(-b+sqrt(delta))/(2*a);
+					float x2=(-b-sqrt(delta))/(2*a);
+					printf("Phuong trinh co hai nghiem phan biet = %f %f",x1,x2);
 				}
 				else{
 					printf("Phuong trinh vo nghiem");
