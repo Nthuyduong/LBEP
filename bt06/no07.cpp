@@ -1,6 +1,6 @@
+//nhap mang so nguyen n, tim chuoi so duong co tong max
 #include <stdio.h>
 int main(){
-	//tim xem x co thuoc mang so n hay khong
 	int n;
 	printf("Nhap so luong phan tu n = ");
 	scanf("%d",&n);
@@ -11,17 +11,16 @@ int main(){
 		scanf("%d",&a[i]);
 	}
 	
-	int x;
-	printf("Nhap so x = ");
-	scanf("%d",&x);
-
+	int c=0,max=0;
 	for(i=0;i<n;i++){
-		if(a[i]==x){
-			printf("x thuoc mang n");
-			break;
+		if(a[i]>0){
+			c+=a[i];
+			if(c>max){
+				max=c;
+			}
 		}
-	}
-	if(i==n){
-		printf("x khong thuoc mang n");
-	}
+		else{
+			c=0;
+		}
+	}printf("chuoi so duong co tong max = %d",max);
 }	

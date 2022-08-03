@@ -10,7 +10,7 @@ int main(){
 		printf("Nhap phan tu thu %d = \n",i);
 		scanf("%d",&a[i]);
 	}
-	//
+
 	for(i=n-1;i<n;i--){
 		if(a[i]%2!=0){
 			printf("So le cuoi cung cua mang n = %d",a[i]);
