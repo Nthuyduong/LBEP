@@ -10,7 +10,7 @@
 		scanf("%d",&b);
 
 		int uc,bc;
-		for(uc=a;uc<=1;uc--){
+		for(uc=a;uc<=a;uc--){
 			if(a%uc==0 && b%uc==0){
 				printf("uoc chung lon nhat = %d",uc);
 				break;
