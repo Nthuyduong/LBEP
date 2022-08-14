@@ -9,8 +9,7 @@ int sum(int n){
 }
 //tinh chu vi tam giac
 int tinhchuvi(int a, int b, int c){
-	int p= a+b+c;
-	return p;
+	return a+b+c;
 }
 //tim uoc chung max cua 2 so
 int uocmax(int a, int b){
@@ -18,6 +17,7 @@ int uocmax(int a, int b){
 	for(u=a;u<=a;u--){
 		if(a%u==0 && b%u==0){
 			return u;
+			break;
 		}
 	}return u;
 }
@@ -27,6 +27,7 @@ int boichungmin(int c, int d){
 	for(i=c;i<=c*d;i++){
 		if(i%c==0 && i%d==0){
 			return i;
+			break;
 		}
 	}return i;
 }
