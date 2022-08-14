@@ -22,5 +22,11 @@ int main(){
 		else{
 			c=0;
 		}
-	}printf("chuoi so duong co tong max = %d",max);
+	}
+	if(max==0){
+		printf("chuoi khong co so duong");
+	}
+	else{
+		printf("chuoi so duong co tong max = %d",max);
+	}
 }	
