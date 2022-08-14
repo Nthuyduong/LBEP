@@ -13,3 +13,11 @@ int main(){
 	}
 	printf("So nghich dao la %d",m);
 }
+//tim chu so cuoi cung cua mot so nguyen n
+//int n;
+//printf("Nhap gia tri cua n = ");
+//scanf("%d",&n);
+//while(n/10>0){
+	//n/=10;
+//}
+//printf("Chu so dau tien cua so nguyen n = %d",n);
