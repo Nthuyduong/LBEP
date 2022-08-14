@@ -14,7 +14,7 @@ int tinhchuvi(int a, int b, int c){
 //tim uoc chung max cua 2 so
 int uocmax(int a, int b){
 	int u;
-	for(u=a;u<=a;u--){
+	for(u=a;u>0;u--){
 		if(a%u==0 && b%u==0){
 			return u;
 			break;
