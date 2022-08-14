@@ -25,8 +25,7 @@ int main(){
 	
 	for(i=0;i<n;i++){
 		if(abs(x-a[i])==hieu){
-			printf("Gia tri gan x nhat la: %d",a[i]);
-			break;
+			printf("Gia tri gan x nhat la: %d\n",a[i]);
 		}
 	}
 
