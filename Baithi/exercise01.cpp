@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
-
 int main (){
+	int m,n;
 	char s1[n],s2[m];
 
 	printf("Enter s1 = ");
@@ -18,9 +18,14 @@ int main (){
 			printf("yes");
 		}
 		else{
-			print("No")
+			printf("No");
 		}
 	}else{
-		if(strchr(s1,s2))
+		if(strchr(s2,s1)>-1){
+			printf("yes");
+		}
+		else{
+			printf("No");
+		}
 	}
 }
