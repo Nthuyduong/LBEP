@@ -1,31 +1,48 @@
-#include <stdio.h>
-#include <math.h>
-int main(){
-	int n;
-	printf("Nhap gia tri cua n = ");
-	scanf("%d",&n);
-
-	int i,arr[n];
-	for(i=0;i<n;i++){
-		printf("Nhap gia tri thu %d = ",i);
-		scanf("%d",&arr[i]);
-	}
-
-	bool t=false;
-	for(i=0;i<n;i++){
-		for(int j=2;j<=sqrt(arr[j]);j++){
-			if(arr[i]%j==0){
-				t=true;
-			}
-			else{
-				t=false;
-			}
+#include<stdio.h>
+void nhap(int a[], int &n){
+    do{
+        printf("Enter Interger: ");
+        scanf("%d",&n);
+    }
+    while(n<2||n>99);
+     
+    for(int i=0; i<n; i++){
+        printf("a[%d]: ",i);
+        scanf("%d",&a[i]);
+    }
+}
+ 
+void xuat(int a[], int n){
+    for(int i=0;i<n;i++){
+        printf("%5d",a[i]);
+    }
+}
+int ktrant(int n){
+    if(n<2)
+        return 0;
+    else{
+        for(int i=2;i<=n/2;i++)
+            if(n%i==0)
+            
+                return 0;
+        return 1;
+    }
+}
+ 
+void insonguyento(int a[], int n){
+    printf("\n Result: \n");
+    for(int i=0;i<n;i++)
+        if(ktrant(a[i] )){
+        	printf("%5d is prime number \n",a[i]);
+		} else {
+			printf("%5d not prime number \n",a[i]);	
+		} 	
 		}
-	}
-	if(t==true){
-		printf("Co so nguyen to trong mang");
-	}
-	else{
-		printf("Khong co so nguyen co");
-	}
+            
+int main(){
+    int a[100];
+    int n;
+    nhap(a,n);
+    insonguyento(a,n);
+    return 0;
 }
