@@ -32,14 +32,16 @@ int ktrant(int n){
  
 void insonguyento(int a[], int n){
     printf("\n Result: \n");
-    for(int i=0;i<n;i++)
-        if(ktrant(a[i] )){
+    for(int i=0;i<n;i++){
+        if(ktrant(a[i])){
         	printf("%5d is prime number \n",a[i]);
-		} else {
+		}
+        else{
 			printf("%5d not prime number \n",a[i]);	
 		} 	
-		}
-            
+	}
+}
+     
 int main(){
     int a[100];
     int n;
