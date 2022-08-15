@@ -1,16 +1,16 @@
 #include<stdio.h>
 #include<string.h>
 int main(){
-	int x;
-	printf("Nhap chieu dai chuoi 1:\n");
-	scanf("%d",&x);
-	char s1[x];
+	int a;
+	printf("Nhap chieu dai chuoi thu 1:\n");
+	scanf("%d",&a);
+	char s1[a];
 	printf("Nhap chuoi thu nhat:\n");
 	scanf("%s",s1);
-	int y;
+	int b;
 	printf("nhap chieu dai chuoi thu 2:\n");
-	scanf("%d",&y);
-	char s2[y];
+	scanf("%d",&b);
+	char s2[b];
 	printf("Nhap chuoi thu hai:\n");
 	scanf("%s",s2);
 	
