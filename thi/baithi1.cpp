@@ -6,7 +6,7 @@ float area(float x, float y, float z){
 	return S;
 }
 int main(){
-	float a,b,c,S,P;
+	float a,b,c,S;
 
 	printf("Nhap a =");
 	scanf("%f",&a);
