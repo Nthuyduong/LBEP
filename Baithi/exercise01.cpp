@@ -23,7 +23,7 @@ int main(){
 	}
 	bool  T = false;
 	int i = 0;
-		while ( s2[i] != 0){                     //khi nao s2 chua het thi con va
+		while ( s2[i] != 0){                     
 			if ( s2[i] == s1[0]) {
 				int j = 0;
 				while( s1[j] != 0 && s2[i] != 0 && s1[j] == s2[i]){
